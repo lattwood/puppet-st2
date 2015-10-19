@@ -9,7 +9,7 @@ Group=root
 Environment="DAEMON_ARGS=--config-file /etc/st2/st2.conf"
 ExecStart=/usr/bin/<%= @process_name %> $DAEMON_ARGS
 TimeoutSec=60
-PrivateTmp=true
+PrivateTmp=false
 Restart=on-failure
 RestartSec=5
 
